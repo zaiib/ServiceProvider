@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.UplaodTask">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.7"
+            android:text="Whats Your Work?"
+            android:textSize="20dp"
+            android:background="#b03060"
+            android:fontFamily="sans-serif"
+            android:textColor="#fff"
+            android:paddingLeft="20dp"
+            android:paddingTop="15dp"/>
+
+        <ImageButton
+            android:id="@+id/cross"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:background="#b03060"
+            android:src="@drawable/crose1_black_24dp" />
+
+    </LinearLayout>
+
+    // title
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Task Tittle"
+            android:textSize="15dp"
+            android:textColor="#b03060"
+            android:paddingTop="20dp"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+
+        <EditText
+            android:id="@+id/edtTitleTask"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/border"
+            android:hint="Enter Task Tittle"
+            android:paddingLeft="10dp"
+            android:inputType="text"
+            android:textSize="15dp" />
+    </LinearLayout>
+    //description
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Description"
+            android:textSize="15dp"
+            android:textColor="#b03060"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/edtTaskDescription"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="@drawable/border"
+            android:hint="Describe your Task "
+            android:paddingBottom="100dp"
+            android:paddingLeft="10dp"
+            android:inputType="text"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="130dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btnNextTask"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Next"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:background="@drawable/border_2"/>
+    </LinearLayout>
+
+</LinearLayout>

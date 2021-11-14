@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.serviceprovider.serviceprovider">
+    <!--
+     The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+     Google Maps Android API v2, but you must specify either coarse or fine
+     location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ServiceProvider">
+        <activity android:name=".Activities.ViewCompleteTask"></activity>
+        <activity android:name=".Activities.ViewCompleteProfileEmployee" />
+        <activity android:name=".Activities.UplaodTask" />
+        <activity android:name=".Activities.SplashScreen" />
+        <activity android:name=".Activities.GetOtp" />
+        <activity android:name=".Activities.PlaceOrder" />
+        <activity android:name=".Activities.UploadDataForTask" />
+        <activity android:name=".Activities.GetLocation" />
+        <activity android:name=".Activities.UpdateClientProfile" />
+        <activity android:name=".Activities.CreateClientProfile" />
+        <activity android:name=".Activities.GetNicImageBack" />
+        <activity android:name=".Activities.GetNiCImageFront" />
+        <activity android:name=".SignUp.SignUpCustomer" />
+        <activity android:name=".Activities.MainCustomerActivity" />
+        <activity android:name=".Login.LoginCustomer" />
+        <activity android:name=".Activities.ForgetPassword" />
+        <activity android:name=".SignUp.SignUpClient" />
+        <activity android:name=".Activities.MainClientActivity" />
+        <activity android:name=".Login.LoginClient" />
+        <activity android:name=".Activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

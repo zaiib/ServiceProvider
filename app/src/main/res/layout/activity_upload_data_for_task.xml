@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.UploadDataForTask">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <EditText
+            android:id="@+id/edtDateTo"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10pt"
+            android:layout_marginRight="5pt"
+            android:layout_marginLeft="5pt"
+            android:layout_weight="1"
+            android:editable="false"
+            android:drawablePadding="5pt"
+            android:hint="Date"
+            android:drawableLeft="@drawable/ic_dob_24dp" />
+
+        <Button
+            android:id="@+id/btnPickDate"
+            android:layout_width="269dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5pt"
+            android:layout_marginTop="10pt"
+            android:layout_marginRight="5pt"
+            android:layout_weight="1"
+            android:background="@drawable/border_2"
+            android:onClick="btnPickDate"
+            android:text="Pick Date"
+            android:textColor="@color/md_white_1000"
+            android:textSize="7pt" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/people_need"
+        android:gravity="center"
+        android:textSize="8pt"
+        android:textColor="@color/accent_black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10pt"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <EditText
+            android:id="@+id/edtTaskerAmount"
+            android:layout_width="314dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="5pt"
+            android:layout_marginRight="5pt"
+            android:layout_weight="1"
+            android:background="@drawable/border" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Taskers"
+            android:layout_weight="1"
+            android:textColor="@color/accent_black"
+            android:textSize="12pt" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/budget"
+        android:gravity="center"
+        android:textSize="8pt"
+        android:textColor="@color/accent_black"/>
+
+    <EditText
+        android:id="@+id/edtBudget"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="5pt"
+        android:layout_marginLeft="15pt"
+        android:layout_marginRight="15pt"
+        android:hint="5000"
+        android:gravity="center"
+        android:background="@drawable/border" />
+
+    <EditText
+        android:id="@+id/edtLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15pt"
+        android:layout_marginTop="10pt"
+        android:layout_marginRight="15pt"
+        android:gravity="center"
+        android:inputType="textMultiLine"
+        android:background="@drawable/border"
+        android:editable="false"
+        android:hint="Select Location" />
+    <EditText
+        android:id="@+id/edtAddress"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="10pt"
+        android:layout_marginLeft="15pt"
+        android:layout_marginRight="15pt"
+        android:hint="Add Your Address"
+        android:gravity="center"
+        android:background="@drawable/border" />
+    <EditText
+        android:id="@+id/edtPhone"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="10pt"
+        android:layout_marginLeft="15pt"
+        android:layout_marginRight="15pt"
+        android:hint="Add Phone Number"
+        android:gravity="center"
+        android:inputType="phone"
+        android:background="@drawable/border" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnNextForOrders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10pt"
+            android:background="@drawable/border_2"
+            android:layout_centerHorizontal="true"
+            android:text="Next"
+            android:textSize="9pt"
+            android:textColor="@color/md_white_1000"
+            android:layout_centerVertical="true"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

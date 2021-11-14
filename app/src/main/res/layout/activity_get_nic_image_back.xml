@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.GetNicImageBack">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Drop CNIC Back Side"
+        android:textColor="@color/md_black_1000"
+        android:gravity="center"
+        android:textSize="8pt"
+        android:layout_margin="6pt"/>
+
+    <ImageView
+        android:id="@+id/cnicBack"
+        android:layout_width="match_parent"
+        android:layout_height="336dp"
+        android:src="@drawable/ic_image_black_24dp" />
+
+    <Button
+        android:id="@+id/btnUploadBack"
+        android:layout_width="212dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10pt"
+        android:background="@drawable/btn_login_design"
+        android:text="Upload"
+        android:textColor="@color/md_white_1000"
+        android:textSize="9pt" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnUplaodDataBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_login_design"
+            android:layout_margin="10pt"
+            android:text="Next"
+            android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
+            android:textColor="@color/md_white_1000"
+            android:textSize="9pt"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Login.LoginClient">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="15pt"
+            android:text="Already Have An Account?"
+            android:textColor="@color/md_black_1000"
+            android:textSize="18pt"
+            android:layout_marginLeft="5pt"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/app_logo" />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/edtLoginEmailClient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="50pt"
+        android:layout_marginRight="15dp"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:drawablePadding="10dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        android:textColor="@color/accent_black"
+        android:textColorHighlight="@color/accent_black"
+        android:textColorHint="@color/accent_black" />
+
+    <EditText
+        android:id="@+id/edtLoginPassClient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5pt"
+        android:layout_marginRight="15dp"
+        android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+        android:drawablePadding="10dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:textColor="@color/accent_black"
+        android:textColorHighlight="@color/accent_black"
+        android:textColorHint="@color/accent_black" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tvForgetPassClient"
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/ic_lock_outline_black_24dp"
+            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+            android:drawablePadding="6dp"
+            android:padding="4dp"
+            android:text="Forget Password"
+            android:textColor="@color/accent_black"
+            android:textSize="7pt" />
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_User_LoginClient"
+        android:layout_width="277dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15pt"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_login_design"
+        android:shadowColor="@android:color/transparent"
+        android:text="Log In"
+        android:textColor="@color/accent_white"
+        android:textSize="10pt" />
+    <TextView
+        android:id="@+id/tvSignUpClient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="New User? Register Now!"
+        android:textColor="@color/colorPrimary"
+        android:textSize="7pt"
+        android:onClick="tvRegClient"
+        android:layout_marginLeft="5pt"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10pt"
+        android:layout_marginTop="15pt"
+        android:layout_marginRight="10pt"
+        android:background="@color/colorPrimaryDark"/>
+</LinearLayout>

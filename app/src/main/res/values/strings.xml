@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ServiceProvider</string>
+    <string name="title_activity_main_user">MainUserActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Bid Client</string>
+    <string name="title_notifications">History</string>
+    <string name="condition">After you click Sign up Button you Agree our Terms and condition
+    as well as privacy policy. We are responsible to secure our user personal data!</string>
+    <string name="people_need">How many people do you need for this task?</string>
+    <string name="budget">Whats your Budget?</string>
+    <string name="title_activity_get_location">Map</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

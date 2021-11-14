@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ViewCompleteTask">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/L3">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Plumber"
+            android:textColor="@color/md_black_1000"
+            android:textSize="20pt"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10pt"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/textBudget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Budget"
+                android:textSize="8pt"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/ttextTaskers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Taskers"
+                android:textSize="8pt"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/textDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textSize="8pt"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:textSize="8pt"
+            android:layout_margin="5pt"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/textAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:layout_margin="5pt"
+            android:textSize="8pt"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/textDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:layout_margin="5pt"
+            android:textSize="8pt"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:id="@+id/L3"
+        android:background="@color/md_grey_200"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true">
+
+
+        <Button
+            android:id="@+id/buttonWhatsApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact For Order"
+            android:background="@drawable/border_2"
+            android:textColor="@color/md_white_1000"
+            android:textSize="8pt"
+            android:layout_margin="3pt"/>
+
+
+    </LinearLayout>
+</RelativeLayout>

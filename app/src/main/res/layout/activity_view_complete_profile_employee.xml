@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activities.ViewCompleteProfileEmployee">
+
+
+
+    <LinearLayout
+        android:id="@+id/L1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:background="@color/colorAccent">
+
+        <ImageView
+            android:layout_width="135dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="5pt"
+            android:layout_marginTop="8pt"
+            android:src="@drawable/fb" />
+        <ImageView
+            android:id="@+id/imgShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="10pt"
+            android:src="@drawable/ic_share_black_24dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/L3"
+        android:layout_below="@+id/L1"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/edtClientNames"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:layout_margin="2pt"
+                    android:gravity="center"
+                    android:text="Jahanzeb Chachar"
+                    android:textSize="11pt"
+                    android:textColor="@color/md_black_1000"/>
+
+
+                <TextView
+                    android:id="@+id/tvJobs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:layout_margin="2pt"
+                    android:gravity="center"
+                    android:text="Android Developer"
+                    android:textSize="8pt"
+                    android:textColor="@color/md_black_1000"/>
+                <TextView
+                    android:id="@+id/tvisBooked"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:layout_margin="2pt"
+                    android:gravity="center"
+                    android:text="Booked"
+                    android:textSize="8pt"
+                    android:textColor="@color/md_black_1000"/>
+                <TextView
+                    android:id="@+id/tvOnline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:layout_margin="2pt"
+                    android:gravity="center"
+                    android:text="Last seen 1 hour ago"
+                    android:textSize="7pt" />
+                <TextView
+                    android:id="@+id/tvTimming"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:layout_margin="2pt"
+                    android:gravity="center"
+                    android:text="Timming"
+                    android:textSize="7pt" />
+                <TextView
+                    android:id="@+id/tvEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:layout_margin="2pt"
+                    android:gravity="center"
+                    android:text="Test@gmail.com"
+                    android:textSize="7pt" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        android:layout_width="501dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:numStars="5"
+                        android:rating="4"
+                        android:stepSize=".5" />
+
+                    <TextView
+                        android:id="@+id/tvGender"
+                        android:layout_width="match_parent"
+                        android:layout_height="43dp"
+                        android:layout_margin="2pt"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Male"
+                        android:textColor="@color/accent_black"
+                        android:textSize="8pt"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/tvBudgets"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Budget:5000"
+                        android:textSize="8pt"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        />
+                    <TextView
+                        android:id="@+id/tvTaskers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Taskers:1"
+                        android:textSize="8pt"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        />
+                    <TextView
+                        android:id="@+id/tvExperience"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="experience"
+                        android:textSize="8pt"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tvDescpClient"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="8pt"
+                    android:layout_margin="3pt"
+                    android:text="@string/condition"/>
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:id="@+id/L3"
+        android:background="@color/md_grey_200"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true">
+
+
+        <Button
+            android:id="@+id/btnWhatsApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="whats App"
+            android:layout_weight="1"
+            android:background="@drawable/border_2"
+            android:textColor="@color/md_white_1000"
+            android:textSize="8pt"
+            android:layout_margin="3pt"/>
+        <Button
+            android:id="@+id/btnCall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Call"
+            android:layout_weight="1"
+            android:background="@drawable/border_2"
+            android:textColor="@color/md_white_1000"
+            android:textSize="8pt"
+            android:layout_margin="3pt"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

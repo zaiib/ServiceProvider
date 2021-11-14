@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_grey_300"
+    tools:context=".Activities.CreateClientProfile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="168dp"
+            android:layout_height="126dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="3pt"
+            android:src="@drawable/agent_filled"
+            android:transitionName="imageMain">
+
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Your Profile Detials"
+            android:layout_gravity="center"
+            android:textColor="@color/accent_black"/>
+        <EditText
+            android:id="@+id/edtNameClientName"
+            android:background="@drawable/edit_txt_bg"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:layout_marginLeft="10pt"
+            android:layout_marginRight="10pt"
+            android:layout_marginTop="5pt"
+            android:ems="10"
+            android:editable="false"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:hint="Enter Name*"
+            android:drawablePadding="5pt"
+            android:inputType="textPersonName" />
+        <EditText
+            android:id="@+id/edtNameClientEmail"
+            android:background="@drawable/edit_txt_bg"
+            android:imeOptions="actionNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10pt"
+            android:layout_marginRight="10pt"
+            android:layout_marginTop="2pt"
+            android:ems="10"
+            android:editable="false"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:hint="Enter Email*"
+            android:drawablePadding="5pt"
+            android:inputType="textPersonName" />
+        <EditText
+            android:id="@+id/edtNameClientPhone"
+            android:background="@drawable/edit_txt_bg"
+            android:imeOptions="actionNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10pt"
+            android:layout_marginRight="10pt"
+            android:layout_marginTop="2pt"
+            android:ems="10"
+            android:editable="false"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:hint="Enter phone*"
+            android:drawablePadding="5pt"
+            android:inputType="phone" />
+        <EditText
+            android:id="@+id/edtNameClientWhatsApp"
+            android:background="@drawable/edit_txt_bg"
+            android:imeOptions="actionNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10pt"
+            android:layout_marginRight="10pt"
+            android:layout_marginTop="2pt"
+            android:ems="10"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:hint="Enter whatsApp Number*"
+            android:drawablePadding="5pt"
+            android:inputType="phone" />
+        <EditText
+            android:id="@+id/edtNameClientJob"
+            android:background="@drawable/edit_txt_bg"
+            android:imeOptions="actionNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10pt"
+            android:layout_marginRight="10pt"
+            android:layout_marginTop="2pt"
+            android:ems="10"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:hint="JOB(Plumber,developer)*"
+            android:drawablePadding="5pt"
+            android:inputType="textPersonName" />
+        <EditText
+            android:id="@+id/edtNameClientDesc"
+            android:background="@drawable/edit_txt_bg"
+            android:imeOptions="actionNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10pt"
+            android:layout_marginRight="10pt"
+            android:layout_marginTop="2pt"
+            android:ems="10"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:hint="Description(300 words)*"
+            android:drawablePadding="5pt"
+            android:inputType="textMultiLine" />
+        <EditText
+            android:id="@+id/edtNameClientBudget"
+            android:background="@drawable/edit_txt_bg"
+            android:imeOptions="actionNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10pt"
+            android:layout_marginRight="10pt"
+            android:layout_marginTop="2pt"
+            android:ems="10"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:hint="Budget*"
+            android:drawablePadding="5pt"
+            android:inputType="textMultiLine" />
+        <EditText
+            android:id="@+id/edtNameClientExperience"
+            android:background="@drawable/edit_txt_bg"
+            android:imeOptions="actionNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10pt"
+            android:layout_marginRight="10pt"
+            android:layout_marginTop="2pt"
+            android:ems="10"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:hint="experience*"
+            android:drawablePadding="5pt"
+            android:inputType="textMultiLine" />
+        <EditText
+            android:id="@+id/edtNameClientGender"
+            android:background="@drawable/edit_txt_bg"
+            android:imeOptions="actionNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10pt"
+            android:layout_marginRight="10pt"
+            android:layout_marginTop="2pt"
+            android:ems="10"
+            android:editable="false"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:hint="Male*"
+            android:drawablePadding="5pt"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/edtworkingTime"
+            android:background="@drawable/edit_txt_bg"
+            android:imeOptions="actionNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10pt"
+            android:layout_marginRight="10pt"
+            android:layout_marginTop="2pt"
+            android:ems="10"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:hint="9Am- 9PM*"
+            android:drawablePadding="5pt"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/btnDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_login_design"
+            android:layout_margin="10pt"
+            android:text="Done"
+            android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
+            android:textColor="@color/md_white_1000"
+            android:textSize="9pt"/>
+
+
+    </LinearLayout>
+</ScrollView>

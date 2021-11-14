@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.MainActivity">
+
+
+    <Button
+        android:id="@+id/btnUsers"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140pt"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:layout_marginBottom="5pt"
+        android:textSize="8pt"
+        android:background="@drawable/btn_login_design"
+        android:text="Start As User" />
+
+    <Button
+        android:id="@+id/btnClient"
+        android:layout_width="348dp"
+        android:textColor="#fff"
+        android:textSize="8pt"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_login_design"
+        android:text="Start as Client" />
+</LinearLayout>
