@@ -1,7 +1,8 @@
 package com.serviceprovider.serviceprovider.Model;
 
 
-public class SendTaskToFirebaseModel {
+public class
+SendTaskToFirebaseModel {
 
     String taskId;
     String tasknames;

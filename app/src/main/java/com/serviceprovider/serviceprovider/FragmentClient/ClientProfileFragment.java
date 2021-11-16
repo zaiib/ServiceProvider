@@ -7,7 +7,10 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.serviceprovider.serviceprovider.R;
 
 /**
@@ -16,7 +19,9 @@ import com.serviceprovider.serviceprovider.R;
  * create an instance of this fragment.
  */
 public class ClientProfileFragment extends Fragment {
-
+    EditText edtName,edtEmail,edtPhone,edtWhatsApp,edtJob,edtDescription,edtBudget,edtExperience,edtGender,edtworkingTime;
+    Button btnUpdate;
+    FirebaseAuth auth;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -63,18 +68,18 @@ public class ClientProfileFragment extends Fragment {
         // Inflate the layout for this fragment
         View  view = inflater.inflate(R.layout.fragment_client_profile, container, false);
 
-//        auth = FirebaseAuth.getInstance();
-//        edtName =  view.findViewById(R.id.edtNameClientNameUpdate);
-//        edtEmail =  view.findViewById(R.id.edtNameClientEmailUpdate);
-//        edtPhone =  view.findViewById(R.id.edtNameClientPhoneUpdate);
-//        edtWhatsApp = view. findViewById(R.id.edtNameClientWhatsAppUpdate);
-//        edtJob =  view.findViewById(R.id.edtNameClientJobUpdate);
-//        edtDescription = view. findViewById(R.id.edtNameClientDescUpdate);
-//        edtBudget =  view.findViewById(R.id.edtNameClientBudgetUpdate);
-//        edtExperience =  view.findViewById(R.id.edtNameClientExperienceUpdate);
-//        edtGender =  view.findViewById(R.id.edtNameClientGenderUpdate);
-//        edtworkingTime =  view.findViewById(R.id.edtworkingTimeUpdate);
-//        btnUpdate =  view.findViewById(R.id.btnUpdate);
+        auth = FirebaseAuth.getInstance();
+        edtName =  view.findViewById(R.id.edtNameClientNameUpdate);
+        edtEmail =  view.findViewById(R.id.edtNameClientEmailUpdate);
+        edtPhone =  view.findViewById(R.id.edtNameClientPhoneUpdate);
+        edtWhatsApp = view. findViewById(R.id.edtNameClientWhatsAppUpdate);
+        edtJob =  view.findViewById(R.id.edtNameClientJobUpdate);
+        edtDescription = view. findViewById(R.id.edtNameClientDescUpdate);
+        edtBudget =  view.findViewById(R.id.edtNameClientBudgetUpdate);
+        edtExperience =  view.findViewById(R.id.edtNameClientExperienceUpdate);
+        edtGender =  view.findViewById(R.id.edtNameClientGenderUpdate);
+        edtworkingTime =  view.findViewById(R.id.edtworkingTimeUpdate);
+        btnUpdate =  view.findViewById(R.id.btnUpdate);
 
         loadUserInformation();
         return view;

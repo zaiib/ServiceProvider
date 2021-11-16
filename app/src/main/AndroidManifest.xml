@@ -11,7 +11,6 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -20,32 +19,75 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ServiceProvider">
-        <activity android:name=".Activities.ViewCompleteTask"></activity>
-        <activity android:name=".Activities.ViewCompleteProfileEmployee" />
-        <activity android:name=".Activities.UplaodTask" />
-        <activity android:name=".Activities.SplashScreen" />
-        <activity android:name=".Activities.GetOtp" />
-        <activity android:name=".Activities.PlaceOrder" />
-        <activity android:name=".Activities.UploadDataForTask" />
-        <activity android:name=".Activities.GetLocation" />
-        <activity android:name=".Activities.UpdateClientProfile" />
-        <activity android:name=".Activities.CreateClientProfile" />
-        <activity android:name=".Activities.GetNicImageBack" />
-        <activity android:name=".Activities.GetNiCImageFront" />
-        <activity android:name=".SignUp.SignUpCustomer" />
-        <activity android:name=".Activities.MainCustomerActivity" />
-        <activity android:name=".Login.LoginCustomer" />
-        <activity android:name=".Activities.ForgetPassword" />
-        <activity android:name=".SignUp.SignUpClient" />
-        <activity android:name=".Activities.MainClientActivity" />
-        <activity android:name=".Login.LoginClient" />
-        <activity android:name=".Activities.MainActivity">
+        <activity
+            android:name=".Activities.MainCustomerActivity"
+            android:exported="true">
+
+        </activity>
+        <activity android:name=".flow" />
+        <activity
+            android:name=".Activities.ViewCompleteTask"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Activities.ViewCompleteProfileEmployee"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.UplaodTask"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.SplashScreen"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.GetOtp"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.PlaceOrder"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.UploadDataForTask"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.GetLocation"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.UpdateClientProfile"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.CreateClientProfile"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.GetNicImageBack"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.GetNiCImageFront"
+            android:exported="true" />
+        <activity
+            android:name=".SignUp.SignUpCustomer"
+            android:exported="true" />
+        <activity
+            android:name=".Login.LoginCustomer"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.ForgetPassword"
+            android:exported="true" />
+        <activity
+            android:name=".SignUp.SignUpClient"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.MainClientActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Login.LoginClient"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.MainActivity"
+            android:exported="true" />
     </application>
 
 </manifest>

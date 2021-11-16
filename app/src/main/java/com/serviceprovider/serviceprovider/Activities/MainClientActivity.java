@@ -34,9 +34,8 @@ public class MainClientActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_client);
 
-
         Toolbar toolbar = findViewById(R.id.toolbar2);
-        setSupportActionBar(toolbar);
+//        setSupportActionBar(toolbar);
         BottomNavigationView bottomView =  findViewById(R.id.bottomNavClient);
         bottomView.setOnNavigationItemSelectedListener(navListner);
         auth = FirebaseAuth.getInstance();

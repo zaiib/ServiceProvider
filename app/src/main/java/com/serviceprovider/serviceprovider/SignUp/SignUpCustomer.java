@@ -115,8 +115,8 @@ public class SignUpCustomer extends AppCompatActivity {
     }
 
     public void storeUserIntoDb() {
-        /*DatabaseReference mDatabase;
-        mDatabase = FirebaseDatabase.getInstance().getReference().child("User_Account");*/
+        DatabaseReference mDatabase;
+        mDatabase = FirebaseDatabase.getInstance().getReference().child("User_Account");
         RegisterUser user;
         String email = edtEmail.getText().toString().trim();
         String password = edtPassword.getText().toString().trim();
